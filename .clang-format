@@ -1,0 +1,48 @@
+---
+Language: Cpp
+BasedOnStyle: Google
+
+# Largura máxima da linha antes de quebrar
+ColumnLimit: 90
+
+# Indentação padrão
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+
+# Versão padrão do C++ para hints de sintaxe
+Standard: Latest
+
+# Controle de chaves (estilo Allman/Attach/etc.)
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterClass: false
+  AfterControlStatement: false
+  AfterEnum: false
+  AfterFunction: false
+  AfterNamespace: false
+  AfterStruct: false
+  AfterUnion: false
+  BeforeCatch: false
+  BeforeElse: false
+
+# Ponteiros e referências alinhados ao tipo: int* x e std::string& ref
+PointerAlignment: Left
+ReferenceAlignment: Left
+
+# Espaçamentos
+SpaceBeforeParens: ControlStatements   # if (cond), mas func()
+SpaceAfterCStyleCast: false
+SpacesInAngles: false                  # std::vector<int>, sem espaço interno
+
+# Inclusões e bibliotecas
+SortIncludes: CaseSensitive
+IncludeBlocks: Regroup                 # Agrupa e ordena blocos de #include automaticamente
+
+# Outras preferências comuns
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: Never
+IndentAccessModifiers: false           # public:, private: na mesma coluna da classe ou recuados
+AccessModifierOffset: -2               # Recuo de 2 espaços para modifiers
+FixNamespaceComments: true             # Adiciona comentário automático no fechamento: } // namespace foo
+...
